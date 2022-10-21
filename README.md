@@ -31,7 +31,7 @@ THEN I am presented with a responsive layout that adapts to my viewport.
 
 GIF displaying the web application's appearance and functionality: 
 
-![image](https://courses.bootcampspot.com/courses/2498/files/2219596/preview)
+![](https://github.com/AndyLaBorde/Portfolio/assets/images/02-advanced-css-homework-demo.gif)
 
 ## Credit
 

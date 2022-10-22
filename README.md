@@ -29,9 +29,10 @@ THEN I am presented with a responsive layout that adapts to my viewport.
 
 ## Mock Up
 
-GIF displaying the web application's appearance and functionality: 
+GIF displaying the web application's appearance and functionality:
+ 
+![](02-advanced-css-homework-demo.gif)
 
-![](https://github.com/AndyLaBorde/Portfolio/02-advanced-css-homework-demo.gif)
 
 ## Credit
 

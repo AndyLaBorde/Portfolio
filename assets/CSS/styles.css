@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgb(53, 23, 161);
+}
+
+header.navbar {
+    justify-content: flex-end;
+}
+
+img {
+    max-width: 100px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}

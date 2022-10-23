@@ -33,7 +33,6 @@ GIF displaying the web application's appearance and functionality:
  
 ![](02-advanced-css-homework-demo.gif)
 
-
 ## Credit
 
 N/A

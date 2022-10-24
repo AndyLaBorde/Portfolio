@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+header {
+    display: flex;
+    background-color: rgb(94, 188, 175);
+    align-items: flex-end;
+    margin-bottom: 5%;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+}
+nav.navbar{
+    min-width: 300px;
+    margin: 2%;
+    font-size: 18px;
+    
+}
+
+img {
+    max-width: 400px;
+    max-height: 200px;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section { 
+    display: flex;
+
+}
+
+.section h3{
+    display: flex;
+    justify-content: flex-start ;
+}
+
+.section p {
+    justify-content: flex-end;
+}

@@ -13,8 +13,8 @@
 <body>
     <header>
         <!-- contains the logo, navbar and is fixed to top -->
-        <img src="./assets/images/Lab_logo.png"/>
-        <h1>Andrew LaBorde</h1>
+        <img class="logo" src="./assets/images/Lab_logo.png"/>
+        <h1 >Andrew LaBorde</h1>
         <nav class="navbar">
             <a href="#about_me">About Me</a>
             <a href="#work">Work</a>
@@ -27,44 +27,48 @@
             <!-- each card will be an application preview with a moving image on hover and a title -->
             <h3>About Me</h3>
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel ad neque, quis minus quasi iste voluptatem! Totam aliquam deleniti praesentium voluptatibus. Quae, magni dolorem? Ullam quae tempora harum culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti maiores inventore facilis dolore excepturi saepe culpa! Perferendis quasi aliquam, molestiae id aliquid vel quidem modi? Atque soluta assumenda itaque.</p>
-
-            <p>    
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel ad neque, quis minus quasi iste voluptatem! Totam aliquam deleniti praesentium voluptatibus. Quae, magni dolorem? Ullam quae tempora harum culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti maiores inventore facilis dolore excepturi saepe culpa! Perferendis quasi aliquam, molestiae id aliquid vel quidem modi? Atque soluta assumenda itaque.
+                
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id totam porro asperiores dignissimos sunt, blanditiis quisquam explicabo quia vitae assumenda, perferendis fuga quas incidunt voluptatum consequuntur, odio aspernatur modi! Dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nulla nesciunt. Quia voluptate libero ex harum odit consequatur voluptatum beatae? In ab dolorem unde maiores amet ea porro molestiae dolor.
             </p>
         </section>
         <section id="work" class="section">
             <h3>Work</h3>
             <!-- each card will be an application preview with a moving image on hover and a title -->
-            <div class="card">
-                <h4>Surf Report</h4>
-                <img src="https://media.tenor.com/BIsmK8KXdKIAAAAM/waves-wave.gif" alt="wave breaking tunnel/>
-            </div>
-            <div class="card">
-                <h4>LED Wall</h4>
-                <img src="https://media.tenor.com/TlUaDI5wwuIAAAAM/hexagon-hexagon-wall.gif" alt="LED Hexagon Color Wall"/>
-            </div>
-            <div class="card">
-                <h4>Calculator</h4>
-                <img src="https://media.tenor.com/WMcQZ8berOEAAAAd/javafx-java.gif" alt="calculator application"/>
-            </div>
-            <div class="card">
-                <h4>Rubicks Cube</h4>
-                <img src="https://media.tenor.com/YzqJv6ExIk8AAAAM/rubicks-cube-game.gif" alt="Rubicks Cube Game"/>
-            </div>
-            <div class="card">
-                <h4>Run Buudy</h4>
-                <img src="https://cdn.dribbble.com/users/555734/screenshots/4397970/ezgif.com-video-to-gif.gif" alt="preview of running tracker app"/>
+            <div class="card-box">
+                <div class="card">
+                    <h4>Surf Report</h4>
+                    <img src="https://media.tenor.com/BIsmK8KXdKIAAAAM/waves-wave.gif" alt="wave breaking tunnel"/>
+                </div>
+                <div class="card">
+                    <h4>LED Wall</h4>
+                    <img src="https://media.tenor.com/TlUaDI5wwuIAAAAM/hexagon-hexagon-wall.gif" alt="LED Hexagon Color Wall"/>
+                </div>
+                <div class="card">
+                    <h4>Calculator</h4>
+                    <img src="https://media.tenor.com/WMcQZ8berOEAAAAd/javafx-java.gif" alt="calculator application"/>
+                </div>
+                <div class="card">
+                    <h4>Rubicks Cube</h4>
+                    <img src="https://media.tenor.com/YzqJv6ExIk8AAAAM/rubicks-cube-game.gif" alt="Rubicks Cube Game"/>
+                </div>
+                <div class="card">
+                    <h4>Run Buudy</h4>
+                    <img src="https://cdn.dribbble.com/users/555734/screenshots/4397970/ezgif.com-video-to-gif.gif" alt="preview of running tracker app"/>
+                </div>
             </div>
         </section>
         <section id="contact" class="section">
             <!-- each card will be an application preview with a moving image on hover and a title -->
+            
             <h3>Contact Me</h3>
+            <div class="contact-box">
             <a href="#" target="no_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAZlBMVEX///8XFRUAAAAUEhL8/PwQDQ3f39+oqKgdHBzz8/PMzMzV1dXv7+/4+PilpaUFAACenp6MjIx4eHjAwMAvLi6xsbHp6emUlJRwcHC3t7cpKCiFhYVEQ0NdXFxqampJSUk2NjZUVFTSKg5rAAADpUlEQVRoge1YW5eyOgzVFJCbAyJ3RJn//ye/cpOU0pLqnHVe2G8zq2x30yQ77el04MCBA/8fwqCKm4Sj+bkH4R8SX6ukswHh3DX3P2JuOZ3Nzgis/6mnb31J7RUuROdNRJD+fEN/vQGwbeoeXP/lY/rKBTXzGB9I/Y+ow1+d6kV98oF4P9qTPQFqx5Q7psiexRvmZUOUPYDBxYQ7MeHuQxP/d9yc/YfKHRtzc3Zi3O8zNy+SSHusDN5FxoCUM+G83n5kxZO3FRW1DayMM3denVLIf2fhUPG/rlk60zNmc7A39WuIxO29vNnnvrwDDt74nyoFFvWd1u0ej+4MQ5OEx1T3wbJ+txNc38Wz7NMqoI3vuXflhW55oXMvXpAtH5ylD1RYqidq97fZ/3L9PvO9WsqXqo+eJPLT433idq3vYajsqeTdkk5LsLZgofKxXyRuC3U4fdQzXJtwpZA7wieBZuULV8x+avW4COSJemGOm7huoSAIGTjTHCmOip0S7SsUFKnjUiJyur0U+KtCuSxdQm53VG4hX9T562EJBt6CNsxc1aIAkxtYeoW/8xSLMqxAtWgDONWVJ4rszSDkPIORXynz4IbIHwbknovIVZ2x+Qty1RjQfBiW0DYjZympa43I8YFSyCGnkwsprIp5TEmpDeCWNIwMW7hQtreBhCLKR4uI9jygxm1RdY0MzX2oBw45i5SN2sUS1M1zhZK24Sc2lTOxuziCWdyU636ofoiBbU7nu4KT7w5QI4QLjna7nTAv62ecETdBj3aQWt0pdqdir119oDPeyej6KXmIJKSqghu12CI3A62UIa16wf5zSAJ+eyiczdT1/ER6GNgx3qEgGL8T+8F9/JTfe9K2qARL9bPm15XfHFi088rzhEEvl1AuF68IXEF9vn6AmYTv1d3Umzl7jhrSOn0vIFPzPe7OaFNucbrS76b6kKZpbGyLcO3hD7DGscuuT9Yp6Ia4MrmoW/n5CCh9dGpyXIcFeeH2WZlIE1IhxYUpxyEBY4fpLdo68Utc5YTyQclBp03zcw8dvCgITq0fyq6Urcnps+V4idY1rjU55fo8wXqM7E+lS6/IoSRzc/ZJO9RJHMe3lxRPMebU1j9j8q7plVVLvpGpe4jRW4iWPCIUj4Sg1rxHLIYIL4PZbMG1mZ9x1eRgcr0R4bSTZ0gGE08HXn7zlO63/TvUJjk/69L4LXSFvKnBlaYvh1tIYXBtUsLa8jnvW9EHDhw48Cn+Af8AJfiqH/41AAAAAElFTkSuQmCC"/>
             </a>
             
             <a href="#" target="no_blank"><img src="data:image/png;base64,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" />
             </a>
+            </div>
         </section>
     </main>
     <footer>

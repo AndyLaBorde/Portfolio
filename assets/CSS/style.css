@@ -10,7 +10,7 @@
 }
 
 body{
-    background-image: linear-gradient(var(--lightGray), var(--darkMatter));
+    background-image:  url("https: //wallpapers.com/images/hd/tron-legacy-hd-wallpaper-auh73ww7hhzf6oax.webp"), linear-gradient(var(--lightGray), var(--darkMatter));;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--offwhite);
 }
@@ -31,10 +31,12 @@ header img {
     max-height: 150px;
     min-height: 150px;
 }
+
 h1 {
     margin-left: 2%; 
     color: var(--seafoam);
 }
+
 .logo {
     border-radius: 50%;
     padding: 1%;
@@ -126,7 +128,6 @@ main {
     animation-play-state: running;
 }
 
-
 .card h4 {
     display: flex;
     background-color: var(--seafoam);
@@ -146,6 +147,7 @@ main {
     align-items: center;
     min-height: fit-content;
 }
+
 .contact-box {
     display:flex;
     border-left-style: double;
@@ -154,6 +156,7 @@ main {
     justify-content: space-evenly;
 
 }
+
 .contact-box a {
     display: flex;
     justify-content: space-around;
@@ -168,4 +171,3 @@ main {
     padding: 2%;
     border-radius: 10px;
 }
-

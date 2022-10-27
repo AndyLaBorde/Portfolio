@@ -1,18 +1,21 @@
+/* setting main color variables to use throu */
 :root{
-    --lightGray: rgb(117, 112, 112);
+    --lightGray: rgb(87, 87, 87);
     --darkMatter: rgb(41, 35, 35);
     --seafoam: rgb(105, 213, 192);
     --offwhite: rgb(235, 241, 241);
 }
 * {
     box-sizing: border-box;
-    animation-play-state: paused;
 }
 
 body{
-    background-image:  url("https: //wallpapers.com/images/hd/tron-legacy-hd-wallpaper-auh73ww7hhzf6oax.webp"), linear-gradient(var(--lightGray), var(--darkMatter));;
+    
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--offwhite);
+    background: url("../images/770958-tron-action-adventure-sci-fi-futuristic-disney.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header {
@@ -34,7 +37,13 @@ header img {
 
 h1 {
     margin-left: 2%; 
-    color: var(--seafoam);
+    padding: 10px;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+h1:hover {
+    box-shadow: inset 1100px 0 0 0 var(--seafoam);
+    color: var(--darkMatter);
 }
 
 .logo {
@@ -62,8 +71,7 @@ h1 {
 
 .navbar a:hover {
     box-shadow: inset 200px 0 0 0 var(--seafoam);
-    color: var(--offwhite);
-    
+    color: var(--darkMatter);
 }
 
 main {
@@ -83,61 +91,123 @@ main {
 .section h3{
     display: flex;
     padding: 2% 4% 2% 10%;
-    color: var(--seafoam);
+    color: var(--offWhite);
     margin-right: 5%;
     max-width: 15%;
     justify-content: center;
     align-items: center;
+    font-size: 200%;
 }
 
 .section p {
     max-width: 60%;
     border-left-style: double;
+    border-width: 10px;
     border-color: var(--seafoam);
     padding: 3%;
-
+    color: var(--offWhite);
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
+
+.section p:hover {
+    box-shadow: inset 1000px 0 0 0 var(--seafoam);
+    color: var(--darkMatter);
+    opacity: 80%;
+}
+
 
 .card-box {
     max-width: 60%;
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    justify-items: center;
+    /* display: grid;
+    grid-template-columns: 33% 33% 33%; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     padding: 10px;
     border-left-style: double;
+    border-width: 10px;
     border-color: var(--seafoam);
-}
-.card {
-    display:flex;
-    flex-grow: 0 0 400px;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-.card img {
-    max-width: 200px;
-    max-height: 200px;
-    min-width: 240px;
-    min-height: 200px;
+/* this controls the main project card allowing it to be bigger than the rest */
+#prework {
+    display: flex;
+    width: 100%;
+    height: 400px; 
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+#prework h4 {
+    display: flex;
+    background-color: var(--seafoam);
+    color: var(--darkMatter);
+    max-height: 50px;
+    padding: 15px;
+    margin: 0;
+    position: relative;
+    align-content: center;
+    justify-content: center;
+}
+
+#prework a {
+    width: 80%;
+    height: 80%;
     border-style: double;
+    border-width: 10px;
     border-color: var(--seafoam);
-    margin-bottom: 10%;
+    
+}
+
+#prework a:hover {
+    box-shadow: inset 800px 0 0 0 var(--seafoam);
+    color: var(--darkMatter);
+    border-style: solid;
+}
+
+#prework a img{
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    /* flex-grow: 0 0 400px; */
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    margin: 5px;
 }
 
 .card img:hover {
-    animation-play-state: running;
+    box-shadow: inset 200px 0 0 0 var(--seafoam);
+    color: var(--darkMatter);
+    border-style: solid;
+}
+
+.card img {
+    /* position: relative;
+    right: 100px; */
+    width: 300px;
+    height: 200px;
+    border-style: double;
+    border-width: 10px;
+    border-color: var(--seafoam);
+    
 }
 
 .card h4 {
     display: flex;
     background-color: var(--seafoam);
+    color: var(--darkMatter);
     max-height: fit-content;
     max-width: 200px;
     min-width: 100px;
     padding: 5px;
     margin: 0;
-    position: relative;
-    top: 197px;
     align-content: center;
     justify-content: center;
 }
@@ -150,7 +220,9 @@ main {
 
 .contact-box {
     display:flex;
+    flex-wrap: wrap;
     border-left-style: double;
+    border-width: 10px;
     border-color: var(--seafoam);
     min-width: 40%;
     justify-content: space-evenly;
@@ -159,8 +231,19 @@ main {
 
 .contact-box a {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    border-style: double;
+    border-color: var(--seafoam);
+    border-width: 10px;
+    margin: 5%;
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+.contact-box a:hover {
+    border-color: var(--seafoam);
+    box-shadow: inset 200px 0 0 0 var(--seafoam);
+    border-width: 10px;
 }
 
 .contact-box a img {
@@ -168,6 +251,18 @@ main {
     min-height: 100px;
     max-height: 100px;
     max-width: 100px;
-    padding: 2%;
+    padding: 5%;
     border-radius: 10px;
+}
+
+@media screen and (min-width: 768px){
+    .responsive{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .responsive{
+        width: 100%;
+    }
 }

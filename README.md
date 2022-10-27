@@ -35,7 +35,8 @@ GIF displaying the web application's appearance and functionality:
 
 ## Credit
 
-N/A
+Background Image : https://wallpaperaccess.com/full/693300.png
+GIF's : https://tenor.com/search/led-wall-gifs
 
 ## Deployed Application
 

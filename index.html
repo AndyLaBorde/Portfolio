@@ -15,6 +15,8 @@
         <!-- contains the logo, navbar and is fixed to top -->
         <img class="logo" src="./assets/images/Lab_logo.png"/>
         <h1 >Andrew LaBorde</h1>
+        <!-- individual classes allow for individual adjustments -->
+        <!--  the #+"section_id" sends the user to that specific section when the link is clicked.-->
         <nav class="navbar">
             <a href="#about_me">About Me</a>
             <a href="#work">Work</a>
@@ -22,21 +24,23 @@
         </nav>
     </header>
     <main>
-        <!-- this will hiold the main content of the page being projects on display ca. -->
+        <!-- this will hiold the main content separated out into three sections. and each section divvied up as needed to fit content appropriately -->
         <section id="about_me" class="section">
-            <!-- each card will be an application preview with a moving image on hover and a title -->
+            <!-- section header -->
             <h3>About Me</h3>
+            <!-- using lorem ipsum as filler for now and will change with next update -->
             <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel ad neque, quis minus quasi iste voluptatem! Totam aliquam deleniti praesentium voluptatibus. Quae, magni dolorem? Ullam quae tempora harum culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti maiores inventore facilis dolore excepturi saepe culpa! Perferendis quasi aliquam, molestiae id aliquid vel quidem modi? Atque soluta assumenda itaque.
-                
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id totam porro asperiores dignissimos sunt, blanditiis quisquam explicabo quia vitae assumenda, perferendis fuga quas incidunt voluptatum consequuntur, odio aspernatur modi! Dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nulla nesciunt. Quia voluptate libero ex harum odit consequatur voluptatum beatae? In ab dolorem unde maiores amet ea porro molestiae dolor.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Non vel ad neque, quis minus quasi iste voluptatem! Totam aliquam deleniti praesentium voluptatibus. Quae, magni dolorem? Ullam quae tempora harum culpa. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem corrupti maiores inventore facilis dolore excepturi saepe culpa! Perferendis quasi aliquam, molestiae id aliquid vel quidem modi? Atque soluta assumenda itaque. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id totam porro asperiores dignissimos sunt, blanditiis quisquam explicabo quia vitae assumenda, perferendis fuga quas incidunt voluptatum consequuntur, odio aspernatur modi! Dolorum? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus, nulla nesciunt. Quia voluptate libero ex harum odit consequatur voluptatum beatae? In ab dolorem unde maiores amet ea porro molestiae dolor.
             </p>
         </section>
         <section id="work" class="section">
+            <!-- section header -->
             <h3>Work</h3>
-            <!-- each card will be an application preview with a moving image and a title -->
             <div class="card-box">
+                <!-- this does not have the card class to differentiate it from the placeholders -->
                 <div id="prework">
+                    <!-- the nested image is a screenshot from the Code Refactor challenge, a.k.a. module 1 challenge -->
+                    <!-- the link goes to the deployed Code Refactor challenge -->
                     <h4>Code Refactor</h4>
                     <a href="https://andylaborde.github.io/M1-Challenge/" target="no_blank"><img src="./assets/images/prework.png" alt="wave breaking tunnel"/></a>
                 </div>
@@ -59,15 +63,24 @@
             </div>
         </section>
         <section id="contact" class="section">
-            <!-- each card will be an application preview with a moving image on hover and a title -->
+            
             
             <h3>Contact Me</h3>
             <div class="contact-box">
+                <!-- !!!DON"T PANIC!!! -->
+                <!-- this link is to gitHub portfolio repo -->
+                <!-- the image nested in thwe a tag is the mini gitHub logo... -->
             <a href="https://github.com/AndyLaBorde/Portfolio" target="no_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFwAAABcCAMAAADUMSJqAAAAZlBMVEX///8XFRUAAAAUEhL8/PwQDQ3f39+oqKgdHBzz8/PMzMzV1dXv7+/4+PilpaUFAACenp6MjIx4eHjAwMAvLi6xsbHp6emUlJRwcHC3t7cpKCiFhYVEQ0NdXFxqampJSUk2NjZUVFTSKg5rAAADpUlEQVRoge1YW5eyOgzVFJCbAyJ3RJn//ye/cpOU0pLqnHVe2G8zq2x30yQ77el04MCBA/8fwqCKm4Sj+bkH4R8SX6ukswHh3DX3P2JuOZ3Nzgis/6mnb31J7RUuROdNRJD+fEN/vQGwbeoeXP/lY/rKBTXzGB9I/Y+ow1+d6kV98oF4P9qTPQFqx5Q7psiexRvmZUOUPYDBxYQ7MeHuQxP/d9yc/YfKHRtzc3Zi3O8zNy+SSHusDN5FxoCUM+G83n5kxZO3FRW1DayMM3denVLIf2fhUPG/rlk60zNmc7A39WuIxO29vNnnvrwDDt74nyoFFvWd1u0ej+4MQ5OEx1T3wbJ+txNc38Wz7NMqoI3vuXflhW55oXMvXpAtH5ylD1RYqidq97fZ/3L9PvO9WsqXqo+eJPLT433idq3vYajsqeTdkk5LsLZgofKxXyRuC3U4fdQzXJtwpZA7wieBZuULV8x+avW4COSJemGOm7huoSAIGTjTHCmOip0S7SsUFKnjUiJyur0U+KtCuSxdQm53VG4hX9T562EJBt6CNsxc1aIAkxtYeoW/8xSLMqxAtWgDONWVJ4rszSDkPIORXynz4IbIHwbknovIVZ2x+Qty1RjQfBiW0DYjZympa43I8YFSyCGnkwsprIp5TEmpDeCWNIwMW7hQtreBhCLKR4uI9jygxm1RdY0MzX2oBw45i5SN2sUS1M1zhZK24Sc2lTOxuziCWdyU636ofoiBbU7nu4KT7w5QI4QLjna7nTAv62ecETdBj3aQWt0pdqdir119oDPeyej6KXmIJKSqghu12CI3A62UIa16wf5zSAJ+eyiczdT1/ER6GNgx3qEgGL8T+8F9/JTfe9K2qARL9bPm15XfHFi088rzhEEvl1AuF68IXEF9vn6AmYTv1d3Umzl7jhrSOn0vIFPzPe7OaFNucbrS76b6kKZpbGyLcO3hD7DGscuuT9Yp6Ia4MrmoW/n5CCh9dGpyXIcFeeH2WZlIE1IhxYUpxyEBY4fpLdo68Utc5YTyQclBp03zcw8dvCgITq0fyq6Urcnps+V4idY1rjU55fo8wXqM7E+lS6/IoSRzc/ZJO9RJHMe3lxRPMebU1j9j8q7plVVLvpGpe4jRW4iWPCIUj4Sg1rxHLIYIL4PZbMG1mZ9x1eRgcr0R4bSTZ0gGE08HXn7zlO63/TvUJjk/69L4LXSFvKnBlaYvh1tIYXBtUsLa8jnvW9EHDhw48Cn+Af8AJfiqH/41AAAAAElFTkSuQmCC"/>
             </a>
             
+            <!-- !!!DON"T PANIC!!! -->
+                <!-- this link is my linkedIn profile, might ask you to log in first -->
+                <!-- the image nested in thwe a tag is the mini linkedIn... -->
             <a href="https://www.linkedin.com/in/andrew-laborde?trk=people-guest_people_search-card" target="no_blank"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEUCdLP///8AbK+30uXF2+oAcrI2hrzq9Pk/jcAAbbAAaa4Ab7GZv9t7q8/b6/MAcLEAZ630+vzO4e5moMoAd7XH3OuNuNevzeJtpMzn8fdTlsSgw91BjcAmgbocfbjv9/t0qc+FstRQlMScwdxPsNUdAAAGMklEQVR4nO3dW3uiMBAGYBKJSlAigiCiWNr//x8X7cFDgRmsbiY8813tDZZ3gSTkhCduUqx917Mubkne5Z9xvkvlGJLu8rhFGNehNN44YmRYx/fC3AuU7RN7YlTgTW6Fbyvb5/T06OW1cCdtn88LIncX4XaMwIa4/RaW2va5vCi6/BQW4ZjKmOuocHYWJqHtM3lZwuQkLMZ6j56iZ40wC2yfxgsTZI1wOpaWTFvMXHjxaMuZU1QYe9E468LvyMjbjFy48fyRC31vMnLhhIWuh4Xuh4Xuh4Xuh4Xuh4XuZ7BQhaGUQWiceWseJjRSTrdZmZfZdqodGcYZIgxlMrkMWh3zdyeMeKFZLWe3I48iSlb0b1a0UM4j8TvrinxnMlao6xbfKQn17mSkcFV2AIWoiVc2OGEPUIiM9lVECWXWAxRiS3pUACM0771AIQ6Uaw2EUMn7WuI+EeX7FCEMFgBQiDfCdQYsVCYGhQXh8hQWhjUIbGpFuk8iLFy1tWXus6H7JIJCVSGAQiiyDVRQaLYo4c5dYdDXnLkkI1uagkLpo4Q52dIUFOo1Skh3mBUWYorS5kWRbGH6LCHd6gJ+DjcoId0uSViYo4Ql2TcouD6sUcKtu7WF2aOEB3drfE8fEUDCb4iwUGIaNYSnNyLeD6cIYfqfTveBIN7xNdxuo9tmw/XTHFy+hKi+Ngl11FDupkH2l/a3vid0C1IP2+cd9vUnRpJsXXgKTmiqbmJEtwPjHOTIjPK6blSf+oo37Oia6ujNID4s4w0YIVV6//syTg6EK8KvDBjHN3p/U/fH+VQTv0NPGTQXw2gvKTfFMT5G/mIX0i5DvzNwPo0ygdSBkVoGxIvQnzw0J8oR22d41pf7YaH7YaH7YaH7ISps2hRNm+kpzSZywnO7MFRpOq3SVIVayz/OuCYlVE2Dt0oWfnT8msITH4v1ZJEcGvPD01lQwgBIe1cbcNCvUzZSJXl7b0m8zubywTnXGGFVLnrzkbX97UP/UR+724NCvc97J1/Nyrl8ZF09pkcY7NY/tvyCmQMHLa6vvJEJYqw5euu4XV4unP1RqPQON5YuZls99F6lIAxT3IyWc6LpwILRvlBp3Kyrnwzs3rMuVBo3UeAqm0FdtLaFKkU+gdcp0gFEy0JTYcbQf//BCl/e2BWqx4DNVcT3hlkVKg+aI9+ZCN0ZbVOoAtyswNbk2BLVojAYXopeBztHyaJQJ38Bihh5m9oTZgG8yqE3yPvUnrD++BtQIPcosyd8sJ64Cm5Oqz3hEzLHXESnhaipWE4LUetY3BYuEbep20LMCgG3haKCb1PHhTV8mzou9OHb1HGhGL9wDj6ItIRxk2FHwA8iFWHsZ7tDFZrQq/a1j2cipv+SEK63Rp8G0dQppvn3r41iugIv9KAgLHb6bshFhUH/RhU/icEuKQLCsm3YTGloq4qvgEWNfeGyY5+iELOSBbETgHVh3fkgBah+HHCJtW3hpOfDIXoCHw+/I1oWHvtnISB+AWy3WRb2d3pils2B1YVdIXB6iBVXYkZbCL2jYzYDIP0cxlA/C2bnGGjdnFUhuCQMs7qzoiyEB1cCuN94CtwHVoXQfz/qQXwHnmWbQsTuUoj6AtoZx6YQsyxwCQsJX8MFvMTdwG1TqOltU7iFuwIRhSn0KzaFe4QQbtVQFiI6rJVxWogYOVIh2CkFLZW3KER9Zwqu8pd0hUfMbiHgvpuUhQXmu6BuCzETDZwWonbtYSELWchCFrKQhSxkIQtZyEIWspCFLGQhC1nIQhaykIUsZCELWchCFrKQhSxkIQtZyEIWspCFLGQhC1nIQhaysCWtO5aDX9nFzdX/HytKvHQK5aGjcJ8QBv82tHoK9eUABeWJRw3+lSfsbeJ4WOh+WOh+WOh+WOh+WOh+WOh+WOh+GqE/cqHvbUYu3HjRyIWRB+4L53SUij3xPmrhu/BEOebbVJaNMB70pTa3ooK4EYoasxeOmwlqcRLGts/jhYnPwt7dfJ3OeSvi82a93TsyOx193vf8czvitzES9Zu4CEXWsXG4u1Grr53rv7eU9lM5KqOsNuJW2FxG9eCHoenFaHX59MD1tuB5ksoxJE2ut3O/2/i8WPuuZ13ckv4BMoOTvjvVjU0AAAAASUVORK5CYII=" />
             </a>
+            <!-- !!!DON"T PANIC!!! -->
+                <!-- this link is to email me at my gmail account p.s. is there a more secure way to do this? .... probably. -->
+                <!-- the image nested in thwe a tag is the mini Gmail logo... -->
             <a href="mailto: andrew.lab14@gmail.com" target="no_blank"><img src="data:image/png;base64,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"/>
             </a>
             </div>

@@ -1,14 +1,18 @@
-/* setting main color variables to use throu */
+/* setting main color variables */
 :root{
     --lightGray: rgb(87, 87, 87);
     --darkMatter: rgb(41, 35, 35);
     --seafoam: rgb(105, 213, 192);
     --offwhite: rgb(235, 241, 241);
 }
+
+/* universal box sizing */
 * {
     box-sizing: border-box;
 }
 
+/* sets font and background image.
+fixes background image so that it doesnt move when you scroll.*/
 body{
     
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -17,7 +21,8 @@ body{
     background-size: cover;
     background-attachment: fixed;
 }
-
+/* sets header as a flex container and aligns all content center on y axis and reads from left to right. 
+nav bar is spaced with margin... is there a better way to do this?... figure it out. */
 header {
     display: flex;
     border-bottom-style: double;
@@ -27,7 +32,7 @@ header {
     align-items: center;
     max-height: 200px;
 }
-
+/* sets sixe of my logo image */
 header img {
     max-width: 150px;
     min-width: 150px;
@@ -35,22 +40,27 @@ header img {
     min-height: 150px;
 }
 
+
 h1 {
+    box-shadow: inset 0 0 0 0 var(--seafoam);
     margin-left: 2%; 
     padding: 10px;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+/* applies transition background and changes color of text for readability */
 h1:hover {
     box-shadow: inset 1100px 0 0 0 var(--seafoam);
     color: var(--darkMatter);
 }
 
+/* makes logo image a circle instead of a square */
 .logo {
     border-radius: 50%;
     padding: 1%;
 }
 
+/* using flexbox to align a tag texts evenly  */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -59,27 +69,33 @@ h1:hover {
     font-size: 22px;
 }
 
+/* sets size of a tags and placement within header */
 .navbar a {
     box-shadow: inset 0 0 0 0 var(--seafoam);
     color: var(--offwhite);
     margin: 0 -.25rem;
     padding: 0 .3rem;
+    /* one of three functioning transitons... figure out why and apply solution to the rest */
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
     text-decoration: none;
     min-width: fit-content;
 }
 
+/* changes color of a tag text and applies variable color from root  */
 .navbar a:hover {
     box-shadow: inset 200px 0 0 0 var(--seafoam);
     color: var(--darkMatter);
 }
 
+/* making main element a flex container to display sections as columns */
 main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
+/* making all elements with the section class flex containers and setting base structure with flexbox 
+displays content evenly starting from left to right and top to bottom*/
 .section {
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +104,8 @@ main {
     /* flex-direction: row; */
     padding: 2%;
 }
+
+/* setting placement, color and zide of section headers using flexbox and root vartiables for colors */
 .section h3{
     display: flex;
     padding: 2% 4% 2% 10%;
@@ -99,6 +117,8 @@ main {
     font-size: 200%;
 }
 
+/* setting p tag size & structure for scalability 
+set color of font and border using root variables*/
 .section p {
     max-width: 60%;
     border-left-style: double;
@@ -106,16 +126,20 @@ main {
     border-color: var(--seafoam);
     padding: 3%;
     color: var(--offWhite);
+    /* one of three functioning transitons... figure out why and apply solution to the rest */ 
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+/* changes color of text and adds solid border around it. reduces opacity alowing you to see the background as you scroll... not sure if i like it or not */
 .section p:hover {
     box-shadow: inset 1000px 0 0 0 var(--seafoam);
     color: var(--darkMatter);
     opacity: 80%;
 }
 
+/* WORK SECTION BELOW */
 
+/* this flex container allows for better organization of project thumbnails and placeholdewrs */
 .card-box {
     max-width: 60%;
     /* display: grid;
@@ -129,17 +153,18 @@ main {
     border-color: var(--seafoam);
 }
 
-/* this controls the main project card allowing it to be bigger than the rest */
+/* the prework id controls the main project card allowing it to be bigger than the rest */
 #prework {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: 400px; 
     align-items: center;
     justify-content: center;
     margin: 2%;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    
 }
-
+/* aligning the header centered on left border */
 #prework h4 {
     display: flex;
     background-color: var(--seafoam);
@@ -151,46 +176,53 @@ main {
     align-content: center;
     justify-content: center;
 }
-
+/* setting the a tag's frame to hold the image */
 #prework a {
     width: 80%;
     height: 80%;
+    min-width: 300px;
     border-style: double;
     border-width: 10px;
     border-color: var(--seafoam);
-    
+    /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out; */
+     /* this transition is under construction */
 }
 
+/* adds solid border around image on hover */
 #prework a:hover {
     box-shadow: inset 800px 0 0 0 var(--seafoam);
     color: var(--darkMatter);
     border-style: solid;
 }
 
+/* sets image to be full size of the a tag frame previously built
+sets minimum width for scaling purposes */
 #prework a img{
     height: 100%;
     width: 100%;
+    min-width: 270px;
 }
-
+/* the card class controls all future prioject spaces */
 .card {
     display: flex;
     /* flex-grow: 0 0 400px; */
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    /* transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+    this transition is under construction */
     margin: 5px;
 }
 
+/* provides solid borders whenever the image of the card is hovered over */
 .card img:hover {
     box-shadow: inset 200px 0 0 0 var(--seafoam);
     color: var(--darkMatter);
     border-style: solid;
 }
 
+/* setting the size and borders of card images. currently gif placeholders for future projects */
 .card img {
-    /* position: relative;
-    right: 100px; */
     width: 300px;
     height: 200px;
     border-style: double;
@@ -199,6 +231,8 @@ main {
     
 }
 
+/* centering text within the background and setting max and min size for scaling purposes
+ */
 .card h4 {
     display: flex;
     background-color: var(--seafoam);
@@ -211,13 +245,16 @@ main {
     align-content: center;
     justify-content: center;
 }
+/* CONTACT SECTION BELOW */
 
+/* the making the entire contact section a flex container  and aligning items center along the y axis.*/
 #contact.section {
     display: flex;
     align-items: center;
     min-height: fit-content;
 }
 
+/* child container separating the a tags from the h3 for alignment */
 .contact-box {
     display:flex;
     flex-wrap: wrap;
@@ -229,6 +266,7 @@ main {
 
 }
 
+/* controlling  */
 .contact-box a {
     display: flex;
     justify-content: space-evenly;
@@ -237,15 +275,18 @@ main {
     border-color: var(--seafoam);
     border-width: 10px;
     margin: 5%;
+    /* this transition is working but strangely */
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
+/* teh solid border appears but only to the inside rail of the double border... interesting, figure out why and fix with next update. */
 .contact-box a:hover {
     border-color: var(--seafoam);
     box-shadow: inset 200px 0 0 0 var(--seafoam);
     border-width: 10px;
 }
 
+/* sets size of mini logos inside the contact me a tags */
 .contact-box a img {
     min-width: 100px;
     min-height: 100px;
@@ -255,13 +296,15 @@ main {
     border-radius: 10px;
 }
 
-@media screen and (min-width: 768px){
+/* makes media respond to screen size down to 768px */
+@media screen and (max-width: 768px){
     .responsive{
         width: 100%;
     }
 }
 
-@media screen and (max-width: 1300px) {
+/* adjusts media screen when its size is below 1500px */
+@media screen and (max-width: 1500px) {
     .responsive{
         width: 100%;
     }

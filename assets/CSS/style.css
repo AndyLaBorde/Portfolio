@@ -120,11 +120,12 @@ displays content evenly starting from left to right and top to bottom*/
 /* setting p tag size & structure for scalability 
 set color of font and border using root variables*/
 .section p {
-    max-width: 60%;
+    max-width: 50%;
     border-left-style: double;
     border-width: 10px;
     border-color: var(--seafoam);
     padding: 3%;
+    padding-left: 8%;
     color: var(--offWhite);
     /* one of three functioning transitons... figure out why and apply solution to the rest */ 
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;

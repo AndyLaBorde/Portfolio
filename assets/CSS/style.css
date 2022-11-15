@@ -14,7 +14,7 @@
 /* sets font and background image.
 fixes background image so that it doesnt move when you scroll.*/
 body{
-    
+    min-height: 100vh;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--offwhite);
     background: url("../images/770958-tron-action-adventure-sci-fi-futuristic-disney.jpg");
@@ -27,7 +27,6 @@ header {
     display: flex;
     border-bottom-style: double;
     border-color: var(--seafoam);
-    align-items: flex-end;
     justify-content: flex-start;
     align-items: center;
     max-height: 200px;
@@ -155,18 +154,18 @@ set color of font and border using root variables*/
 }
 
 /* the prework id controls the main project card allowing it to be bigger than the rest */
-#prework {
+#mostRecent {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    height: 400px; 
+    height: 500px; 
     align-items: center;
     justify-content: center;
     margin: 2%;
     
 }
 /* aligning the header centered on left border */
-#prework h4 {
+#mostRecent h4 {
     display: flex;
     background-color: var(--seafoam);
     color: var(--darkMatter);
@@ -178,7 +177,7 @@ set color of font and border using root variables*/
     justify-content: center;
 }
 /* setting the a tag's frame to hold the image */
-#prework a {
+#mostRecent a {
     width: 80%;
     height: 80%;
     min-width: 300px;
@@ -190,7 +189,7 @@ set color of font and border using root variables*/
 }
 
 /* adds solid border around image on hover */
-#prework a:hover {
+#mostRecent a:hover {
     box-shadow: inset 800px 0 0 0 var(--seafoam);
     color: var(--darkMatter);
     border-style: solid;
@@ -198,7 +197,7 @@ set color of font and border using root variables*/
 
 /* sets image to be full size of the a tag frame previously built
 sets minimum width for scaling purposes */
-#prework a img{
+#mostRecent a img{
     height: 100%;
     width: 100%;
     min-width: 270px;
